@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+		integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+	<link rel="icon" type="image/x-icon" href="css/images/icons8-favicon-48.png">
+	<link rel="stylesheet" href="CSS/style3.css">
+	<title>Home</title>
+</head>
+
+<body>
+	<section id="preloader"></section>
+	<section>
+		<div class="back">
+			<div class="Welcome-text">
+				<h1>Welcome</h1>
+			</div>
+			<div class="Search">
+				<input type="text" placeholder="Search">
+				<span><i class="fa-solid fa-magnifying-glass"></i></span>
+			</div>
+			<div class="find">
+				<a href="#"><span></span>Find Out</a>
+			</div>
+		</div>
+		<div id="menu"><img src="menu.png" alt="menu" id="icon"></div>
+		<div id="menu-bar">
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="java.html">Calcy</a></li>
+					<li><a href="#footer">Contact Us</a></li>
+					<!-- <li><a href="About.html">About Us</a></li> -->
+				</ul>
+			</nav>
+		</div>
+	</section>
+	<section id="box">
+		<div class="box-text">
+			<p>Presents</p>
+			<h1>Myself</h1>
+		</div>
+		<div class="bx-text">
+			<div class="h1">
+				<h1>Good quality</h1>
+				<ul>
+					<li>
+						<div class="li">
+							<h1>HellO</h1>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="img">
+				<img src="image/lars.jpg" alt="image">
+				<div class="border"></div>
+			</div>
+		</div>
+		<div class="bx-text">
+			<div class="h1">
+				<h1>Good quality</h1>
+				<ul>
+					<li>
+						<div class="li">
+							<h1>HellO</h1>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="img">
+				<img src="image/H.jpg" alt="image">
+				<div class="border"></div>
+			</div>
+		</div>
+		<div class="bx-text">
+			<div class="h1">
+				<h1>Good quality</h1>
+				<ul>
+					<li>
+						<div class="li">
+							<h3>HellO</h3>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="img">
+				<img src="image/L.jpg" alt="image">
+				<div class="border"></div>
+			</div>
+		</div>
+	</section>
+	<section id="footer">
+		<div class="footer-head">
+			<p>Contact</p>
+		</div>
+		<div class="footer-txt-line">
+			<div class="footer-txt-right">
+				<p class="footer-txt-head">Get in touch</p>
+				<p>Mondey to Friday - 9.a.m to 9.p.m<i class="fa-regular fa-clock"></i></p>
+			</div>
+			<div class="footer-txt-left">
+				<p class="footer-txt-head">Where to Contact</p>
+				<p>7/8, Shantipath, Chanakyapuri, Delhi-110021<i class="fa-solid fa-location-dot"></i></p>
+				<p>example@gmail.com<i class="fa-solid fa-envelope"></i></p>
+				<p>011 4178 2000<i class="fa-solid fa-phone"></i></p>
+			</div>	
+			
+		</div>
+		<div class="footer-media">
+			<i class="fa-brands fa-facebook"></i>
+			<i class="fa-brands fa-instagram"></i>
+			<i class="fa-brands fa-whatsapp"></i>
+			<i class="fa-brands fa-twitter"></i>
+		</div>
+
+	</section>
+	<script>
+		let M = document.getElementById("menu");
+		let N = document.getElementById("menu-bar");
+		let p = document.getElementById("icon");
+
+		N.style.right = "-240px";
+		M.onclick = function () {
+			if (N.style.right == "-240px") {
+				N.style.right = "0px";
+				p.src = "close.png";
+			}
+			else {
+				N.style.right = "-240px";
+				p.src = "menu.png";
+			}
+		}
+	</script>
+	<!-- <script>
+			var x=document.getElementById("preloader");
+
+			window.addEventListener("load",function(){
+			x.style.display = "none";
+			})
+		</script> -->
+	<script src="javascript/known.js"></script>
+	<script src="javascript/preloader.js"></script>
+</body>
+
+</html>

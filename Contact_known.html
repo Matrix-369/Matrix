@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+		integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="CSS/style3.css">
+	<title>Home</title>
+</head>
+
+<body>
+	<section id="preloader"></section>
+	<section>
+		<div class="back">
+			<div class="Welcome-text">
+				<h1 style="font-family: Arial, Helvetica, sans-serif;">Contact</h1>
+			</div>
+		</div>
+		<div id="menu"><img src="menu.png" alt="menu" id="icon"></div>
+		<div id="menu-bar" class="b">
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="java.html">Calcy</a></li>
+					<li><a href="Contact_known.html">Contact Us</a></li>
+					<!-- <li><a href="About.html">About Us</a></li> -->
+				</ul>
+			</nav>
+		</div>
+	</section>
+	<section id="box">
+		<div class="box-text">
+			<p>Presents</p>
+			<h1>Myself</h1>
+		</div>
+		<div class="bx-text">
+			<div class="h1">
+				<h1>Ph:98110982909,011-41814405</h1>
+				<h1>Website:www.W-tec.in</h1>
+				<ul>
+					<li>
+						<div class="li">
+							<h1>To book an Apointment</h1>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="img">
+				<img src="image/w-tec.jpg">
+				<div class="border"></div>
+			</div>
+	</section>
+	<section id="Contact">
+		<div class="contact">
+			<div class="contact-img">
+				<img src="image/contact.avif" alt="">
+			</div>
+			<div class="contact-form">
+				<h1>Schedule your call</h1>
+				<div class="form">
+					<div class="input">
+						<input type="text" placeholder="First Name">
+						<input type="text" placeholder="Last Name">
+					</div>
+					<div class="textArea">	
+						<textarea name="E-mail" placeholder="E-mail"></textarea>
+					</div>	
+					<div class="submit">
+						<input type="date" id="date">
+						<input type="submit">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script>
+		let M = document.getElementById("menu");
+		let N = document.getElementById("menu-bar");
+		let p = document.getElementById("icon");
+
+		N.style.right = "-240px";
+		M.onclick = function () {
+			if (N.style.right == "-240px") {
+				N.style.right = "0px";
+				p.src = "close.png";
+			}
+			else {
+				N.style.right = "-240px";
+				p.src = "menu.png";
+			}
+		}
+	</script>
+	<script>
+		var x = document.getElementById("preloader");
+
+		window.addEventListener("load", function () {
+			x.style.display = "none";
+		})
+	</script>
+	<script src="javascript/known.js"></script>
+</body>
+
+</html>

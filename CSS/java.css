@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+}
+body{
+	height:100vh;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	background: #1B2021;
+	background: rgb(42,53,77);
+}
+#calcy{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 12px;
+	background: transparent;
+	border: 1px solid #3a3a3a;
+	border-radius: 18px;
+	outline: 0;
+	box-shadow: 0 0 18px #000;
+	position: relative;
+	transition: 0.3s;
+}
+input{
+	min-width: 270px;
+	padding: 15px;
+	margin: 9px 12px;
+	text-align: end;
+	font-weight: bold;
+	font-size: 27px;
+	color: #fff;
+	background: transparent;
+	border: none;
+	outline: none;
+}
+@media screen and (max-width:600px) {
+	#calcy{
+			max-width: 270px;
+	}    
+}
+#calcy button{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 60px;
+	height: 60px;
+	padding: 30px;
+	margin: 9px 12px;
+	border-radius: 50%;
+	font-size: 27px;
+	font-weight: bold;
+	font-family: 'Poppins', sans-serif;
+	color: #fff;
+	background: transparent;
+	border: none;
+	outline: 1px solid #3a3a3a;
+	box-shadow: 9px 12px 12px #000;
+	cursor: pointer;
+	transition: 0.3s;
+}
+#calcy button:active{
+	background-color: #3a3a3a;
+	color:white;
+	transform: translate(3px,3px);
+}
+#calcy .oprator{
+	background: #fff;
+	color: #000;
+}
+#calcy #red{
+	background: red;
+	color: #fff;
+}
+#calcy #organe{
+	background: orangered;
+	color: #fff;
+}
+#calcy .green{
+	background: green;
+	color: #fff;
+}
+.help{
+	position: absolute; 
+	top: 102px;
+	left: 42px;
+	padding: 15px;
+	font-size: 15px;
+	font-weight: bold;
+	color: white;
+	background: transparent;
+	border: 1px solid #3a3a3a;
+	outline: 0;
+	box-shadow: 0 0 15px #000;	
+}
+#help{
+	position: absolute;
+	z-index: 2;
+	left: 0px;
+	height: 100vh;
+	width: 270px;
+	transition: 0.3s;
+}
+#img{
+	color: #fff;
+}
+.img{
+	width: 63px;
+	padding: 15px;
+	position: absolute;
+	background: transparent;
+	z-index: 3;
+	top: 9px;
+	left: 9px;
+	color: #fff;
+	border: none;
+	outline: 0;
+	box-shadow: 0 0 12px #000;
+	font-size: 27px;
+	cursor: pointer;
+	transition: 0.3s;	
+}
+.img:active{
+	background: #3a3a3a;
+	transform: translate(3px,3px);
+}
+.button button{
+	height: 61px;
+	width: 63px;
+	position: absolute;
+	top: 9px;
+	left: 80px;
+	background: transparent; 
+	border: none;
+	outline: 0;
+	box-shadow: 0 0 12px #000;
+	font-size: 27px;
+	font-weight: bold;
+	color: #fff;
+	transition: 0.3s;
+}
+.button button:active{
+	background: #3a3a3a;
+	transform: translate(3px,3px);
+}
+#txt{
+	position: absolute;
+	z-index: -6;
+	color: #fff;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#txt h1{
+	font-size: 180px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 600;
+	text-shadow: 6px 9px 12px #000;
+}
+#preloader{
+	height: 100vh;
+	background: url(gif/hearthbeat-svg-loader-animation.svg) rgb(42,53,77);
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	z-index: 999;
+	width:  100vw;
+}

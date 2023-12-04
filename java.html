@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="CSS/java.css">
+		<title>calcy</title>
+	</head>
+	<body>
+		<div id="preloader"></div>
+		<div class="button"><button onclick="calcy()">C</button></div>
+		<div id="img">
+			<!-- <button class="img" onclick="s();"><i class="fa-solid fa-handshake-angle"></i></button> -->
+			<!-- <button class="img" onclick="s();"><i class="fa-solid fa-xmark"></i></button> -->
+			
+		</div>	
+		<span id="help">
+			<div class="help">
+				Press<br>
+				1.Enter : to perform any opration.<br>
+				2.Delete : to Clear dialog box.<br>
+				3.Backspace : to clear any wrong opration.<br> 
+			</div>
+		</span>	
+		<div id="txt">
+			<h1>Calcy</h1>
+		</div>
+		<div id="calcy">
+			<input type="text" id="result" value="" placeholder="0" onkeydown="solve(event);">
+			<table>
+				<tr>
+					<td><button onclick="clr()" id="red">AC</button></td>
+					<td><button onclick="percent()" class="oprator">%</button></td>
+					<td><button onclick="input('*')" class="oprator">X</button></td>
+					<td><button onclick="square()" class="oprator"><i class="fa-solid fa-square-root-variable"></i></button></td>
+				</tr>
+				<tr>
+					<td><button onclick='input(7);'>7</button></td>
+					<td><button onclick='input(8);'>8</button></td>
+					<td><button onclick="input(9)">9</button></td>
+					<td><button class="oprator" onclick='input("+")'>+</button></td>
+				</tr>
+				<tr>
+					<td><button onclick="input(4)">4</button></td>
+					<td><button onclick="input(5)">5</button></td>
+					<td><button onclick="input(6)">6</button></td>
+					<td><button class="oprator" onclick="input('-')">-</button></td>
+				</tr>
+				<tr>
+					<td><button onclick="input(1)">1</button></td>
+					<td><button onclick="input(2)">2</button></td>
+					<td><button onclick="input(3)">3</button></td>
+					<td><button class="oprator" onclick="input('/')">/</button></td>
+				</tr>
+				<tr>
+					<td><button class="oprator" onclick="input('.')">.</button></td>
+					<td><button onclick="input(0)">0</button></td>
+					<td><button onclick="Clr();" value="Clear" class="D" id="organe"><i class="fa-regular fa-circle-xmark"></i></button></td>
+					<td><button class="oprator green" onclick="maths();"><i class="fa-solid fa-equals"></i></button></td>
+				</tr>
+			</table>
+		</div>	
+		
+
+		<script src="javascript/first.js">
+			// let result = document.getElementById('result');
+			// let R = result;
+			
+
+			// function input(value){
+			// 	R.value += value;
+			// 	console.log(R.value);
+			// }			
+			// let M = maths = () => {
+			// 	const exp = eval(R.value);
+			// 	R.value = exp;	
+			// 	return R.value;		
+			// }
+			// clr = () => {
+			// 	R.value = '';	
+			// 	console.log(R.value);			
+			// }
+			// function Clr() {
+			// 	R.value = R.value.substring(0,R.value.length - 1);
+			// 	console.log(R.value);			
+			// }
+			// function percent() {
+			// 	const P = eval(R.value);
+			// 	R.value = P * 100;
+			// }
+			// function square() {
+			// 	const S = Math.sqrt(R.value);
+			// 	R.value = S;
+			// }
+			// function solve(e){
+			// 	if(e.key === 'Enter') {
+			// 		maths();
+			// 	}
+			// 	else if(e.key === 'Delete') {
+			// 		clr();
+			// 	}
+			// }
+			// let x = document.querySelector('#help');
+			// let I = document.querySelector('#img');
+			// x.style.left = '-270px';
+			// I.innerHTML = '<button class="img" onclick="s();"><i class="fa-solid fa-handshake-angle"></i></button>'
+			// function s() {
+			// 	if(x.style.left === '-270px') {
+			// 		x.style.left = '0px';
+			// 		I.innerHTML = '<button class="img" onclick="s();"><i class="fa-solid fa-xmark"></i></button>'
+			// 	}
+			// 	else{
+			// 		x.style.left = '-270px';
+			// 		I.innerHTML = '<button class="img" onclick="s();"><i class="fa-solid fa-handshake-angle"></i></button>'
+			// 	}
+			// } 
+			// let O = document.querySelector('#calcy')
+			// O.style.top = '-586px';
+			// function calcy() {
+			// 	if (O.style.top === '-586px') {
+			// 		O.style.top = '0px'					
+			// 	}
+			// 	else{
+			// 		O.style.top = '-586px'
+			// 	}
+
+			// }	
+		</script>
+		<script src="javascript/preloader.js"></script>
+	</body>
+</html>
