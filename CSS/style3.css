@@ -444,7 +444,7 @@ input[type="submit"] {
 
 .footer-media {
 	width: 30%;
-	margin: 150px auto 0;
+	margin: 150px auto 30px;
 	text-align: center;
 }
 
