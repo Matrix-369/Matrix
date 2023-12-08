@@ -386,7 +386,7 @@ input[type="submit"] {
 	text-align: center;
 }
 
-.footer-head p {
+.head p {
 	position: relative;
 	display: inline-block;
 	font-size: 24px;
@@ -395,7 +395,7 @@ input[type="submit"] {
 	z-index: 1;
 }
 
-.footer-head p::before {
+.head p::before {
 	content: '';
 	padding: 24px;
 	position: absolute;
@@ -458,4 +458,16 @@ input[type="submit"] {
 .footer-media i:hover {
 	transform: translateY(-3px)
 
+}
+
+#Service {
+	width: 100%;
+	padding: 30px;
+	margin: 21px 0 10px;
+}
+
+.Service-head {
+	width: 80%;
+	margin: auto;
+	text-align: center;
 }
