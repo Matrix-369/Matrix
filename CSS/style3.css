@@ -536,3 +536,9 @@ input[type="submit"] {
 .hover-box3:hover {
 	transform: translateY(-6px);
 }
+
+.Testimonial-text p {
+	font-size: 15px;
+	font-weight: 510;
+
+}
