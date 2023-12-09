@@ -12,8 +12,12 @@ html {
 	scroll-behavior: smooth;
 }
 
+body {
+	overflow-x: hidden;
+}
+
 #preloader {
-	background: url(gif/Preloader3.gif) ;
+	background: url(gif/Preloader3.gif);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -439,7 +443,7 @@ input[type="submit"] {
 .footer-txt-left i {
 	color: #009688;
 	font-size: 18px;
-    margin-left: 9px;
+	margin-left: 9px;
 }
 
 .footer-media {
@@ -457,17 +461,78 @@ input[type="submit"] {
 
 .footer-media i:hover {
 	transform: translateY(-3px)
-
 }
 
-#Service {
+#Testimonial {
 	width: 100%;
-	padding: 30px;
-	margin: 21px 0 10px;
+	padding: 60px;
+	margin: 30px 0px 0 10px;
 }
 
-.Service-head {
-	width: 80%;
+.Testimonial {
+	width: 60%;
 	margin: auto;
 	text-align: center;
+}
+
+.Testimonial-container {
+	width: 81%;
+	margin: auto;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+
+}
+
+.Testimonial-container img {
+	width: 72px;
+	border-radius: 50%;
+}
+
+.Testimonial-box {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-basis: 33%;
+	position: relative;
+	padding: 15px;
+	margin: 0px 9px 0 0;
+	box-shadow: 4px 12px 12px rgba(0, 0, 0, 0.33);
+	transition: 0.15s;
+}
+
+.twitter-profile {
+	width: 100%;
+	display: flex;
+}
+
+.twitter {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	position: relative;
+	flex-basis: 100%;
+}
+
+.twitter-profile-name {
+	font-weight: 600;
+	font-size: 21px;
+	display: flex;
+	align-items: center;
+
+}
+
+.twitter-icon {
+	margin: 0 0 0 12px;
+}
+
+.twitter-color,
+.twitter-color i {
+	color: #1DA1F2;
+}
+
+.hover-box1:hover,
+.hover-box2:hover,
+.hover-box3:hover {
+	transform: translateY(-6px);
 }
